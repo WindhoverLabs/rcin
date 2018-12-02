@@ -11,7 +11,7 @@ module.exports = class CfeCdrPlugin extends CdrPlugin {
 
   getContent() {
     var result = {
-      shortDescription: 'RCIN',
+      shortDescription: 'Radio Control Input',
       longDescription: 'Radio Control Input.',
       nodes: {
         main: {
