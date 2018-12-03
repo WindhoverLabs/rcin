@@ -37,6 +37,7 @@ add_airliner_app_def(rcin
         ${CMAKE_CURRENT_SOURCE_DIR}/../src/rcin_app.h
         ${CMAKE_CURRENT_SOURCE_DIR}/../src/rcin_events.h
         ${CMAKE_CURRENT_SOURCE_DIR}/../src/rcin_msg.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/../src/rcin_symbols.c
         ${CMAKE_CURRENT_SOURCE_DIR}/../src/rcin_version.h
         ${CMAKE_CURRENT_SOURCE_DIR}/../src/rcin_custom.h
 
