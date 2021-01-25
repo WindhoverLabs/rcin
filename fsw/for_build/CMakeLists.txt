@@ -44,17 +44,18 @@ add_airliner_app_def(rcin
     INCLUDES
         ${CMAKE_CURRENT_SOURCE_DIR}/../src/
 
-    USER_DOCS   ${CMAKE_CURRENT_SOURCE_DIR}/user_doxy.in
     DESIGN_DOCS ${CMAKE_CURRENT_SOURCE_DIR}/detail_doxy.in
-
-    MSG_OVERRIDES ${CMAKE_CURRENT_SOURCE_DIR}/rcin_msg_overrides.json
-
-    COMMANDER_PLUGIN
-        ${CMAKE_CURRENT_SOURCE_DIR}/../../cdr
+    
+    REFERENCE_CONFIG
+        ${PROJECT_SOURCE_DIR}/apps/rcin/fsw/mission_inc
+        ${PROJECT_SOURCE_DIR}/apps/rcin/fsw/platform_inc
 )
 
 add_airliner_app_unit_test(rcin-ut
     UTASSERT
+    NO_HELGRIND
+    NO_MASSIF
+
     SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/../unit_test/rcin_app_test.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/../unit_test/rcin_app_test.h
