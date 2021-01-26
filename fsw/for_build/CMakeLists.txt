@@ -30,7 +30,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 #
 #############################################################################
-add_airliner_app_def(rcin
+buildliner_add_app_def(rcin
     FILE RCIN
     SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/../src/rcin_app.cpp
@@ -51,7 +51,7 @@ add_airliner_app_def(rcin
         ${PROJECT_SOURCE_DIR}/apps/rcin/fsw/platform_inc
 )
 
-add_airliner_app_unit_test(rcin-ut
+buildliner_add_app_unit_test(rcin-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
